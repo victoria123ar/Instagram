@@ -1,0 +1,515 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Roboto';
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 54px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: #ffff;
+}
+
+.topo {
+  width: 100%;
+  max-width: 900px;
+}
+
+.logoMobile{
+    display: none;
+}
+
+.logoDescktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoImg {
+  font-size: 22px;
+}
+
+.logoBarra {
+  border-left: 1px solid #dbdbdb;
+  height: 22px;
+}
+
+.logoText {
+  width: 103px;
+}
+
+input {
+  width: 215px;
+  height: 28px;
+  background-color: #fafafa;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Roboto";
+  color: #979797;
+  font-size: 12px;
+  border: 1px solid #dbdbdb;
+}
+
+.icones {
+  width: 125px;
+  display: flex;
+  align-items: center;
+}
+
+.icone {
+  font-size: 22px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+nav{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.direita{
+    max-width: 614px;
+}
+
+.stories {
+  position: relative;
+  padding-left: 10px;
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  width: 614px;
+  height: 118px;
+  background-color: #ffff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.storie{
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.storie span{
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 66px;
+  width: 66px;
+  background-image: url(../assets/story-circle.svg);
+  background-size: cover;
+}
+.status img {
+  width: 66px;
+}
+
+.storie img {
+  width: 56px;
+  border-radius: 50px;
+}
+
+.iconeStorie {
+  color: #ffff;
+  font-size: 32px;
+  position: absolute;
+  right: 2px;
+  top: 36px;
+  cursor: pointer;
+}
+
+.posts{
+    width: 100%;
+}
+
+.post{
+    width: 614px;
+    max-width: 614px;
+    height: 820px;
+    background-color: #ffff;
+    margin-bottom: 50px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+.top{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.autor{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.autor p{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.autor img{
+    margin-right: 15px;
+    width: 32px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.lateral{
+    display: flex;
+    align-items: center;
+    margin-left: 465px;
+}
+
+.lateral .icone{
+    font-size: 16px;
+}
+
+.image img{
+    width: 100%;
+    height: 612px;
+}
+
+.image video{
+    width: 100%;
+    height: 612px;
+}
+
+.footer{
+    height: 597px;
+    flex-direction: column;
+    margin-left: 15px;
+    display: flex;
+}
+
+.cima{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.iconeDireita{
+    display: flex;
+    width: 100px;
+}
+
+.iconeEsquerda img{
+    height: 18px;
+    margin-left: 465px;
+    cursor: pointer;
+}
+
+.curtidas{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.curtidas p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.curtidas img{
+    width: 20px;
+    border-radius: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.comentario{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.comentario strong{
+    font-size: 12px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.comentario p{
+    font-size: 12px;
+}
+
+.iconeComentario{
+    font-size: 14px;
+    margin-left: 465px;
+    cursor: pointer;
+}
+
+.publicar{
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+    height: 45px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.iconePublicar{
+    padding-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.publicar > input{
+    margin-left: 10px;
+    border:none;
+    width: 490px;
+    height: 45px;
+    text-align: start;
+    font-family: 'Roboto';
+    font-weight: 500;
+    padding-left: 5px;
+    background-color: #ffff;
+}
+
+button{
+    height: 45px;
+    background-color: #ffff;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #B2DFFC;
+    cursor:pointer;
+    border: none;
+}
+
+button:hover{
+    color: #0095F6;
+    transition: 300ms;
+}
+
+.sidebar{
+    margin-top: 110px;
+    margin-left: 30px;
+    width: 280px;
+    height: 500px;
+    position: fixed;
+    top: 0;
+    left: 1130px;
+}
+
+.nome h1{
+    font-size: 14px;
+    font-family: 'Roboto';
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.nome p{
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #8e8e8e;
+    font-weight: 300;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.usuario img{
+    width: 56px;
+    border-radius: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user img{
+    width: 32px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.sugestoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.sugestoes > .texto h1{
+    font-weight: 500;
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-right: 122px;
+}
+
+.sugestoes > .texto p{
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sugestao{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    margin-left: 10px;
+    width: 65px;
+}
+
+.user > .text h1{
+    font-size: 14px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.user > .text p{
+    font-size: 12px;
+    font-weight: 300;
+    color: #8e8e8e;
+}
+
+.seguir{
+    margin-left: 140px;
+}
+
+.seguir p{
+    font-size: 12px;
+    color: #139EF2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nomes{
+    font-size: 11px;
+    font-weight: 300;
+    color: #c7c7c7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.insta{
+    font-size: 11px;
+    font-weight: 300;
+    color: #c7c7c7;
+}
+
+footer{
+    display: none;
+}
+
+@media (max-width: 935px){
+    .logoDescktop{
+        padding: 0 15px;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
+@media (max-width:614px){
+    .logoDescktop{
+        display: none;
+    }
+
+    .logoMobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .icone2{
+        width: 22px;
+    }
+    
+    .direita{
+        width: 100%;
+    }
+
+    .stories{
+        width: 100%;
+        border: none;
+        background-color: #fafafa;
+    }
+
+    .storie{
+        background-color: #fafafa;
+    }
+
+    .iconeStorie{
+        display: none;
+    }
+
+    .post{
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 54px;
+        background-color: #ffff;
+        border-top: 1px solid #dbdbdb;
+        padding: 0 15px;
+    }
+
+    .iconeFooter{
+        font-size: 22px;
+    }
+
+}
+
